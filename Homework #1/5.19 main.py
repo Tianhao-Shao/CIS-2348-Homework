@@ -1,3 +1,6 @@
+# Tianhao Shao
+# 1781421
+
 print("Davy's auto shop services")
 print('Oil change -- $35\nTire rotation -- $19\nCar wash -- $7\nCar wax -- $12\n')
 
