@@ -1,3 +1,6 @@
+#Tianhao Shao
+# 1781421
+
 import math
 
 # Dictionary of paint colors and cost per gallon
