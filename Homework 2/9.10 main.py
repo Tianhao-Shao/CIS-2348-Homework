@@ -1,3 +1,6 @@
+# Tianhao Shao
+# 1781421
+
 import csv
 
 #Enter the file name:
