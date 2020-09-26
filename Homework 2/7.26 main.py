@@ -1,3 +1,6 @@
+# Tianhao Shao
+# 1781421
+
 ''' Define your function here '''
 def exact_change(user_total):
 	dollars = user_total // 100
