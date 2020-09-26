@@ -1,0 +1,56 @@
+# Tianhao Shao
+# 1781421
+
+input_file = open('inputDares','r')
+output_file = open('parsedDates','w')
+
+for line in input_file:
+	if line == '-1':
+		break
+	else:
+		ls = line.split(' ')
+		if len(ls)==3: # div lines to three parts, help ignore if lines don't have three part
+			month = ls[0]
+			day = ls[1]
+			year = ls[2]
+			
+			#Check',' in day
+			if day[-1]==',': # help ignore if no ',' at end of day[]
+				day = day[:len(day)-1] # delet',' in day
+				
+				# Change month to number
+				if month.find('January') !=-1:
+					month=month.replace('January','1')
+				elif month.find('February') !=-1:
+					month=month.replace('February','2')
+				elif month.find('March') !=-1:
+					month=month.replace('March','3')
+				elif month.find('April') !=-1:
+					month=month.replace('April','4')
+				elif month.find('May') !=-1:
+					month=month.replace('May','5')
+				elif month.find('June') !=-1:
+					month=month.replace('June','6')
+				elif month.find('July') !=-1:
+					month=month.replace('July','7')
+				elif month.find('August') !=-1:
+					month=month.replace('August','8')
+				elif month.find('September') !=-1:
+					month=month.replace('September','9')
+				elif month.find('October') !=-1:
+					month=month.replace('October','10')
+				elif month.find('November') !=-1:
+					month=month.replace('November','11')
+				elif month.find('December') !=-1:
+					month=month.replace('December','12')
+				else:
+					continue # ignore any format for month
+				
+				final = month+'/'+day+'/'+year
+				output_file.write(final)
+
+
+output_file.close()
+input_file.close()
+
+
