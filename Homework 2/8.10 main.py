@@ -1,3 +1,6 @@
+# Tianhao Shao
+# 1781421
+
 user_input = input()
 user_input_ignspace = user_input.replace(' ','')
 
