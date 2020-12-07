@@ -115,7 +115,6 @@ def menu():
                     oit.append(suppliers[x])
         # print(oit)
         # print(suppliers)
-        # om = list(products.keys())[list(products.values()).index(oit[0][0])]
         print(f'{oit[0][0]} {list(suppliers.keys())[0]} {item_type} {oit[0][1]}')
 
 
